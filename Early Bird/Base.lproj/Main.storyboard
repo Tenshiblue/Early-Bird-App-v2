@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="Erp-QV-Ojv">
             <objects>
-                <viewController id="EXV-kF-Fr6" customClass="ViewController" customModule="Early_Bird" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EXV-kF-Fr6" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ORY-GH-7f4"/>
                         <viewControllerLayoutGuide type="bottom" id="Kns-6v-bU5"/>
