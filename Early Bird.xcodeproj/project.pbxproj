@@ -407,6 +407,7 @@
 				D901691D1AAA20AA00E02A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D901691E1AAA20AA00E02A01 /* Build configuration list for PBXNativeTarget "Early BirdTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				D90169201AAA20AA00E02A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
