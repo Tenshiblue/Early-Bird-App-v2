@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EXV-kF-Fr6">
->>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
 =======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EXV-kF-Fr6">
 >>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
@@ -36,12 +32,8 @@
                                 </state>
                                 <connections>
 <<<<<<< HEAD
-<<<<<<< HEAD
                                     <action selector="incrementCounter:" destination="EXV-kF-Fr6" eventType="touchUpInside" id="oNr-nn-tlR"/>
                                     <segue destination="CHY-DG-e3B" kind="showDetail" id="ToT-vf-TXb"/>
-=======
-                                    <segue destination="CHY-DG-e3B" kind="show" id="8sP-RW-bNI"/>
->>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
 =======
                                     <segue destination="CHY-DG-e3B" kind="show" id="8sP-RW-bNI"/>
 >>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
@@ -72,12 +64,8 @@
                                 </variation>
                                 <connections>
 <<<<<<< HEAD
-<<<<<<< HEAD
                                     <action selector="incrementCounter:" destination="EXV-kF-Fr6" eventType="touchUpInside" id="OvU-yS-GtT"/>
                                     <segue destination="CHY-DG-e3B" kind="showDetail" id="y0e-4T-N6B"/>
-=======
-                                    <segue destination="CHY-DG-e3B" kind="show" id="0hG-r4-fvv"/>
->>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
 =======
                                     <segue destination="CHY-DG-e3B" kind="show" id="0hG-r4-fvv"/>
 >>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
@@ -96,12 +84,8 @@
                                 </state>
                                 <connections>
 <<<<<<< HEAD
-<<<<<<< HEAD
                                     <action selector="incrementCounter:" destination="EXV-kF-Fr6" eventType="touchUpInside" id="Zxc-V5-csA"/>
                                     <segue destination="CHY-DG-e3B" kind="showDetail" id="nR8-Yv-bpV"/>
-=======
-                                    <segue destination="CHY-DG-e3B" kind="show" id="UU3-W5-Oh3"/>
->>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
 =======
                                     <segue destination="CHY-DG-e3B" kind="show" id="UU3-W5-Oh3"/>
 >>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
@@ -120,12 +104,8 @@
                                 </state>
                                 <connections>
 <<<<<<< HEAD
-<<<<<<< HEAD
                                     <action selector="incrementCounter:" destination="EXV-kF-Fr6" eventType="touchUpInside" id="2IE-AD-sYi"/>
                                     <segue destination="CHY-DG-e3B" kind="showDetail" id="e7V-cq-w24"/>
-=======
-                                    <segue destination="CHY-DG-e3B" kind="show" id="ZIh-o7-JKc"/>
->>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
 =======
                                     <segue destination="CHY-DG-e3B" kind="show" id="ZIh-o7-JKc"/>
 >>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
@@ -181,10 +161,6 @@
                                 <exclude reference="rUh-Ut-wzq"/>
                                 <exclude reference="sHO-y8-SsJ"/>
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                                <exclude reference="VZM-nQ-tWJ"/>
->>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
 =======
                                 <exclude reference="VZM-nQ-tWJ"/>
 >>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
@@ -296,21 +272,15 @@
         </scene>
     </scenes>
 <<<<<<< HEAD
-<<<<<<< HEAD
     <inferredMetricsTieBreakers>
         <segue reference="y0e-4T-N6B"/>
 =======
-=======
->>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
     <resources>
         <image name="Back Arrow" width="626" height="478"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eRY-DC-eWT"/>
         <segue reference="ZIh-o7-JKc"/>
-<<<<<<< HEAD
->>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
-=======
 >>>>>>> ac2424816180eb3d21ef146fbb497bb4305d3ac0
     </inferredMetricsTieBreakers>
 </document>
