@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -28,9 +28,10 @@
                                 </state>
                                 <connections>
                                     <action selector="incrementCounter:" destination="EXV-kF-Fr6" eventType="touchUpInside" id="oNr-nn-tlR"/>
+                                    <segue destination="CHY-DG-e3B" kind="showDetail" id="ToT-vf-TXb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYP-he-Nds">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYP-he-Nds">
                                 <rect key="frame" x="16" y="372" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="EUy-6e-ebv"/>
@@ -45,14 +46,15 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="EUy-6e-ebv"/>
                                         <exclude reference="SHJ-yB-gFx"/>
                                         <exclude reference="YNz-g5-N5w"/>
-                                        <exclude reference="EUy-6e-ebv"/>
                                         <exclude reference="o7f-iJ-MHB"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="incrementCounter:" destination="EXV-kF-Fr6" eventType="touchUpInside" id="OvU-yS-GtT"/>
+                                    <segue destination="CHY-DG-e3B" kind="showDetail" id="y0e-4T-N6B"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zm-dC-SE3">
@@ -66,6 +68,7 @@
                                 </state>
                                 <connections>
                                     <action selector="incrementCounter:" destination="EXV-kF-Fr6" eventType="touchUpInside" id="Zxc-V5-csA"/>
+                                    <segue destination="CHY-DG-e3B" kind="showDetail" id="nR8-Yv-bpV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEJ-lt-N8s">
@@ -80,6 +83,7 @@
                                 </state>
                                 <connections>
                                     <action selector="incrementCounter:" destination="EXV-kF-Fr6" eventType="touchUpInside" id="2IE-AD-sYi"/>
+                                    <segue destination="CHY-DG-e3B" kind="showDetail" id="e7V-cq-w24"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO7-XA-zbQ">
@@ -116,7 +120,6 @@
                             <constraint firstAttribute="centerX" secondItem="mLj-eH-cw0" secondAttribute="centerX" id="hkk-Wm-MLI"/>
                             <constraint firstAttribute="centerX" secondItem="mLj-eH-cw0" secondAttribute="centerX" id="rUh-Ut-wzq"/>
                             <constraint firstAttribute="centerY" secondItem="mLj-eH-cw0" secondAttribute="centerY" constant="255" id="sHO-y8-SsJ"/>
-                            <constraint firstAttribute="centerY" secondItem="ZYP-he-Nds" secondAttribute="centerY" constant="-136" id="sTn-cZ-iaH"/>
                             <constraint firstAttribute="centerX" secondItem="ZYP-he-Nds" secondAttribute="centerX" constant="164" id="teZ-9r-QWX"/>
                             <constraint firstAttribute="centerX" secondItem="7Zm-dC-SE3" secondAttribute="centerX" constant="-164" id="vSP-QW-vqK"/>
                             <constraint firstAttribute="centerY" secondItem="0co-z2-8yL" secondAttribute="centerY" constant="65" id="vrE-6F-jEl"/>
@@ -124,8 +127,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="sHO-y8-SsJ"/>
                                 <exclude reference="rUh-Ut-wzq"/>
+                                <exclude reference="sHO-y8-SsJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -197,4 +200,7 @@
             <point key="canvasLocation" x="1332" y="372"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="y0e-4T-N6B"/>
+    </inferredMetricsTieBreakers>
 </document>
