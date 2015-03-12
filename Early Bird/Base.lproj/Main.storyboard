@@ -89,7 +89,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Meals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLj-eH-cw0">
                                 <rect key="frame" x="175" y="72" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="SE7-Iw-vo7"/>
                                     <constraint firstAttribute="height" constant="50" id="bxd-c0-I5z"/>
@@ -100,7 +100,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO7-XA-zbQ">
                                 <rect key="frame" x="187" y="550" width="226" height="30"/>
-                                <color key="backgroundColor" red="0.50196081399917603" green="0.25098040699958801" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="uCg-z5-0EF"/>
                                     <constraint firstAttribute="width" constant="226" id="vpi-Tc-iMf"/>
@@ -160,14 +160,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-dm-T3I">
-                                <rect key="frame" x="16" y="20" width="99" height="51"/>
+                                <rect key="frame" x="16" y="20" width="50" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1JJ-6A-9J6"/>
                                     <constraint firstAttribute="width" constant="99" id="5SL-Dw-jAo"/>
                                     <constraint firstAttribute="height" constant="51" id="MhR-Hy-o7l"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZW0-bM-dxo"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Back Arrow">
+                                <state key="normal" backgroundImage="Back arrow v2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5SL-Dw-jAo"/>
+                                        <exclude reference="MhR-Hy-o7l"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="EXV-kF-Fr6" kind="show" id="eRY-DC-eWT"/>
                                 </connections>
@@ -176,8 +184,24 @@
                         <color key="backgroundColor" red="0.99251759910000004" green="1" blue="0.37651112710000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="254.5" id="4G3-R1-fTF"/>
+                            <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="260" id="60l-xa-PSO"/>
+                            <constraint firstAttribute="centerX" secondItem="Xao-dm-T3I" secondAttribute="centerX" constant="259" id="DhY-fP-k9Z"/>
+                            <constraint firstAttribute="centerX" secondItem="Xao-dm-T3I" secondAttribute="centerX" constant="259" id="T2h-MR-WNf"/>
+                            <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="260" id="XxD-cn-VSB"/>
+                            <constraint firstAttribute="centerX" secondItem="Xao-dm-T3I" secondAttribute="centerX" constant="259" id="mRu-gs-gFa"/>
                             <constraint firstAttribute="centerX" secondItem="Xao-dm-T3I" secondAttribute="centerX" constant="234.5" id="rx6-gL-hB0"/>
+                            <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="260" id="sCA-9i-KFY"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4G3-R1-fTF"/>
+                                <exclude reference="T2h-MR-WNf"/>
+                                <exclude reference="XxD-cn-VSB"/>
+                                <exclude reference="mRu-gs-gFa"/>
+                                <exclude reference="rx6-gL-hB0"/>
+                                <exclude reference="sCA-9i-KFY"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHa-hE-k2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -205,7 +229,7 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Food Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qB-Nx-fXk">
                                 <rect key="frame" x="225" y="83" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Hs8-lW-SdU"/>
                                     <constraint firstAttribute="height" constant="30" id="WZy-eb-T5r"/>
@@ -215,14 +239,22 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B24-ZK-fyc">
-                                <rect key="frame" x="16" y="20" width="99" height="51"/>
+                                <rect key="frame" x="16" y="20" width="50" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="D4G-fl-KS8"/>
+                                    <constraint firstAttribute="height" constant="40" id="LhU-Cf-1Q6"/>
+                                    <constraint firstAttribute="width" constant="50" id="Uqr-eX-W8w"/>
                                     <constraint firstAttribute="width" constant="99" id="z8t-q5-hvA"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Back Arrow">
+                                <state key="normal" backgroundImage="Back arrow v2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="D4G-fl-KS8"/>
+                                        <exclude reference="z8t-q5-hvA"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="EXV-kF-Fr6" kind="show" id="eem-iB-y1Y"/>
                                 </connections>
@@ -234,9 +266,17 @@
                             <constraint firstAttribute="centerX" secondItem="8qB-Nx-fXk" secondAttribute="centerX" id="Cwt-Gh-PDy"/>
                             <constraint firstAttribute="centerY" secondItem="Dvx-Dq-m1x" secondAttribute="centerY" constant="107" id="HXo-HN-FI3"/>
                             <constraint firstAttribute="centerX" secondItem="B24-ZK-fyc" secondAttribute="centerX" constant="234.5" id="dlx-d8-dmW"/>
+                            <constraint firstAttribute="centerX" secondItem="B24-ZK-fyc" secondAttribute="centerX" constant="259" id="jUx-tp-qZB"/>
                             <constraint firstAttribute="centerY" secondItem="8qB-Nx-fXk" secondAttribute="centerY" constant="202" id="pM6-1P-uY6"/>
                             <constraint firstAttribute="centerX" secondItem="Dvx-Dq-m1x" secondAttribute="centerX" id="sfO-re-9TZ"/>
+                            <constraint firstAttribute="centerY" secondItem="B24-ZK-fyc" secondAttribute="centerY" constant="260" id="vUq-Xk-bO1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1xJ-Yb-zrz"/>
+                                <exclude reference="dlx-d8-dmW"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="AZ5-j7-8fj"/>
                 </viewController>
@@ -246,10 +286,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Back Arrow" width="626" height="478"/>
+        <image name="Back arrow v2" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eRY-DC-eWT"/>
         <segue reference="ZIh-o7-JKc"/>
+        <segue reference="eem-iB-y1Y"/>
     </inferredMetricsTieBreakers>
 </document>

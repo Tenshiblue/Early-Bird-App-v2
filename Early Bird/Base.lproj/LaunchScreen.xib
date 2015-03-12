@@ -20,15 +20,13 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" alpha="0.64999999999999969" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7578" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-Vb-0VG">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="480" id="3l6-DS-sng"/>
-                        <constraint firstAttribute="width" constant="480" id="KQj-Hs-uPi"/>
-                    </constraints>
-                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Early Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qw-Pi-733">
+                    <rect key="frame" x="132" y="27" width="216" height="75"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="47"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="0Gi-8P-ddm"/>
                 <constraint firstAttribute="centerY" secondItem="8ie-xW-0ye" secondAttribute="centerY" constant="-221.25" id="Cs9-Ax-9dB"/>
@@ -36,8 +34,6 @@
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstAttribute="centerX" secondItem="eTL-Vb-0VG" secondAttribute="centerX" id="c3W-hj-bDt"/>
-                <constraint firstAttribute="centerY" secondItem="eTL-Vb-0VG" secondAttribute="centerY" id="kpZ-V3-tko"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="yo9-F0-te3"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -53,7 +49,4 @@
             <point key="canvasLocation" x="525" y="488"/>
         </view>
     </objects>
-    <resources>
-        <image name="IMG_7578" width="1369" height="1369"/>
-    </resources>
 </document>
