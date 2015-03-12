@@ -2,3 +2,7 @@ Early Bird.xcodeproj/project.xcworkspace/xcuserdata/enagoshi.xcuserdatad/UserInt
 Early Bird.xcodeproj/xcuserdata/enagoshi.xcuserdatad/xcschemes/Early Bird.xcscheme
 
 Early Bird.xcodeproj/xcuserdata/enagoshi.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xccheckout
+
+*.xcuserstate
