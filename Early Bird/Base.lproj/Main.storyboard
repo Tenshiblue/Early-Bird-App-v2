@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start Screen-->
         <scene sceneID="Erp-QV-Ojv">
             <objects>
-                <viewController id="EXV-kF-Fr6" sceneMemberID="viewController">
+                <viewController title="Start Screen" id="EXV-kF-Fr6" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ORY-GH-7f4"/>
                         <viewControllerLayoutGuide type="bottom" id="Kns-6v-bU5"/>
@@ -87,12 +87,14 @@
                                     <segue destination="CHY-DG-e3B" kind="show" id="ZIh-o7-JKc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Meals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLj-eH-cw0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLj-eH-cw0">
                                 <rect key="frame" x="175" y="72" width="250" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="SE7-Iw-vo7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="VW0-SM-481"/>
                                     <constraint firstAttribute="height" constant="50" id="bxd-c0-I5z"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="lWH-sH-nxe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="634" y="372"/>
         </scene>
-        <!--View Controller-->
+        <!--More Information-->
         <scene sceneID="mqE-1F-URn">
             <objects>
-                <viewController id="lpB-Gz-doh" customClass="ViewController" customModule="Early_Bird" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="More Information" id="lpB-Gz-doh" customClass="moreInformation" customModule="Early_Bird" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Cl-03-oIX"/>
                         <viewControllerLayoutGuide type="bottom" id="baJ-1q-gYp"/>
@@ -180,8 +182,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0r-KF-G4Z">
+                                <rect key="frame" x="0.0" y="96" width="600" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="U0g-pX-d77"/>
+                                    <constraint firstAttribute="height" constant="504" id="ltL-B1-epe"/>
+                                </constraints>
+                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-dm-T3I">
-                                <rect key="frame" x="16" y="20" width="50" height="40"/>
+                                <rect key="frame" x="16" y="48" width="50" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="1JJ-6A-9J6"/>
                                     <constraint firstAttribute="width" constant="99" id="5SL-Dw-jAo"/>
@@ -201,39 +211,17 @@
                                     <segue destination="EXV-kF-Fr6" kind="show" id="eRY-DC-eWT"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0r-KF-G4Z">
-                                <rect key="frame" x="0.0" y="96" width="600" height="504"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="U0g-pX-d77"/>
-                                    <constraint firstAttribute="height" constant="504" id="ltL-B1-epe"/>
-                                </constraints>
-                            </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3V1-CM-fE7">
-                                <rect key="frame" x="538" y="58" width="35" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="Adx-lZ-gFU"/>
-                                    <constraint firstAttribute="height" constant="30" id="NzI-kL-uJt"/>
-                                </constraints>
-                                <state key="normal" title="Load">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Menu:" destination="lpB-Gz-doh" eventType="touchUpInside" id="qsz-Lh-72t"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99251759910000004" green="1" blue="0.37651112710000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="T0r-KF-G4Z" secondAttribute="centerX" id="2xJ-bl-bLD"/>
                             <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="254.5" id="4G3-R1-fTF"/>
                             <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="260" id="60l-xa-PSO"/>
-                            <constraint firstAttribute="centerX" secondItem="3V1-CM-fE7" secondAttribute="centerX" constant="-255.5" id="8S2-ii-O2X"/>
                             <constraint firstAttribute="centerX" secondItem="Xao-dm-T3I" secondAttribute="centerX" constant="259" id="DhY-fP-k9Z"/>
                             <constraint firstAttribute="centerX" secondItem="Xao-dm-T3I" secondAttribute="centerX" constant="259" id="T2h-MR-WNf"/>
                             <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="260" id="XxD-cn-VSB"/>
                             <constraint firstAttribute="centerY" secondItem="T0r-KF-G4Z" secondAttribute="centerY" constant="-48" id="ZgG-xE-6AP"/>
-                            <constraint firstAttribute="centerY" secondItem="3V1-CM-fE7" secondAttribute="centerY" constant="227" id="csi-Wy-asH"/>
+                            <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="232" id="iw0-GT-hN9"/>
                             <constraint firstAttribute="centerX" secondItem="Xao-dm-T3I" secondAttribute="centerX" constant="259" id="mRu-gs-gFa"/>
                             <constraint firstAttribute="centerX" secondItem="Xao-dm-T3I" secondAttribute="centerX" constant="234.5" id="rx6-gL-hB0"/>
                             <constraint firstAttribute="centerY" secondItem="Xao-dm-T3I" secondAttribute="centerY" constant="260" id="sCA-9i-KFY"/>
@@ -241,6 +229,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="4G3-R1-fTF"/>
+                                <exclude reference="60l-xa-PSO"/>
                                 <exclude reference="T2h-MR-WNf"/>
                                 <exclude reference="XxD-cn-VSB"/>
                                 <exclude reference="mRu-gs-gFa"/>
@@ -257,10 +246,10 @@
             </objects>
             <point key="canvasLocation" x="634" y="1133"/>
         </scene>
-        <!--Title-->
+        <!--About Page-->
         <scene sceneID="x8n-JZ-lrp">
             <objects>
-                <viewController id="CHY-DG-e3B" customClass="ViewController" customModule="Early_Bird" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="About Page" id="CHY-DG-e3B" customClass="ViewController" customModule="Early_Bird" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bae-Dy-Unc"/>
                         <viewControllerLayoutGuide type="bottom" id="eKh-z9-pDQ"/>
