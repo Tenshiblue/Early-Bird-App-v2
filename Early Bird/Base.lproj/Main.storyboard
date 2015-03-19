@@ -265,7 +265,7 @@
                                     <constraint firstAttribute="height" constant="128" id="ygq-6P-0re"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Food Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qB-Nx-fXk">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Food Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qB-Nx-fXk">
                                 <rect key="frame" x="225" y="83" width="150" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -356,7 +356,7 @@
         <image name="logo transparent" width="1056" height="1184"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eRY-DC-eWT"/>
+        <segue reference="eem-iB-y1Y"/>
         <segue reference="ZIh-o7-JKc"/>
     </inferredMetricsTieBreakers>
 </document>
