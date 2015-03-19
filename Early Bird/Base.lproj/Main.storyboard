@@ -87,19 +87,6 @@
                                     <segue destination="CHY-DG-e3B" kind="show" id="ZIh-o7-JKc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLj-eH-cw0">
-                                <rect key="frame" x="175" y="72" width="250" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="SE7-Iw-vo7"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="VW0-SM-481"/>
-                                    <constraint firstAttribute="height" constant="50" id="bxd-c0-I5z"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="lWH-sH-nxe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO7-XA-zbQ">
                                 <rect key="frame" x="187" y="550" width="226" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
@@ -115,51 +102,46 @@
                                     <segue destination="lpB-Gz-doh" kind="show" id="Lq2-YE-inR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo transparent" translatesAutoresizingMaskIntoConstraints="NO" id="5SU-ll-afO">
-                                <rect key="frame" x="426" y="56" width="77" height="82"/>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfv-Ut-2Vb">
+                                <rect key="frame" x="146" y="20" width="309" height="106"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="2bV-74-5U2"/>
-                                    <constraint firstAttribute="width" constant="240" id="3Q8-Ov-Y6E"/>
-                                    <constraint firstAttribute="height" constant="82" id="GZH-i9-IVw"/>
-                                    <constraint firstAttribute="height" constant="128" id="YwI-op-tS0"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="82" id="pi3-ff-oGt"/>
-                                    <constraint firstAttribute="width" constant="77" id="zVn-ib-SMg"/>
+                                    <constraint firstAttribute="width" constant="309" id="d3D-5O-5Sz"/>
+                                    <constraint firstAttribute="height" constant="106" id="e9E-31-cpR"/>
+                                    <constraint firstAttribute="width" constant="340" id="nKy-W4-NdN"/>
+                                    <constraint firstAttribute="height" constant="141" id="pmw-Mr-nBP"/>
                                 </constraints>
+                                <state key="normal" backgroundImage="HotDogMeals">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="2bV-74-5U2"/>
-                                        <exclude reference="3Q8-Ov-Y6E"/>
-                                        <exclude reference="YwI-op-tS0"/>
-                                        <exclude reference="pi3-ff-oGt"/>
+                                        <exclude reference="nKy-W4-NdN"/>
+                                        <exclude reference="pmw-Mr-nBP"/>
                                     </mask>
                                 </variation>
-                            </imageView>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                         <accessibility key="accessibilityConfiguration" label=""/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="DO7-XA-zbQ" secondAttribute="centerX" id="3yF-iq-LsL"/>
                             <constraint firstAttribute="centerX" secondItem="nEJ-lt-N8s" secondAttribute="centerX" constant="-164" id="43G-bf-jq9"/>
-                            <constraint firstAttribute="centerY" secondItem="mLj-eH-cw0" secondAttribute="centerY" constant="203" id="H4W-0F-DkF"/>
                             <constraint firstAttribute="centerY" secondItem="DO7-XA-zbQ" secondAttribute="centerY" constant="-265" id="IiQ-Qd-AYS"/>
+                            <constraint firstAttribute="centerY" secondItem="bfv-Ut-2Vb" secondAttribute="centerY" constant="214.5" id="PBH-bZ-8hf"/>
+                            <constraint firstAttribute="centerX" secondItem="bfv-Ut-2Vb" secondAttribute="centerX" id="Sck-U0-1QW"/>
                             <constraint firstAttribute="centerY" secondItem="DO7-XA-zbQ" secondAttribute="centerY" constant="-223" id="VZM-nQ-tWJ"/>
                             <constraint firstAttribute="centerY" secondItem="7Zm-dC-SE3" secondAttribute="centerY" constant="-136" id="Y2q-rl-Ex2"/>
                             <constraint firstAttribute="centerX" secondItem="0co-z2-8yL" secondAttribute="centerX" constant="164" id="aSI-RP-F2M"/>
-                            <constraint firstAttribute="centerX" secondItem="mLj-eH-cw0" secondAttribute="centerX" id="hkk-Wm-MLI"/>
-                            <constraint firstAttribute="centerX" secondItem="mLj-eH-cw0" secondAttribute="centerX" id="rUh-Ut-wzq"/>
-                            <constraint firstAttribute="centerX" secondItem="5SU-ll-afO" secondAttribute="centerX" constant="-164.5" id="ryj-xa-7b3"/>
-                            <constraint firstAttribute="centerY" secondItem="mLj-eH-cw0" secondAttribute="centerY" constant="255" id="sHO-y8-SsJ"/>
+                            <constraint firstAttribute="centerY" secondItem="bfv-Ut-2Vb" secondAttribute="centerY" constant="227" id="i4b-aX-lWa"/>
                             <constraint firstAttribute="centerY" secondItem="ZYP-he-Nds" secondAttribute="centerY" constant="-136" id="sTn-cZ-iaH"/>
                             <constraint firstAttribute="centerX" secondItem="ZYP-he-Nds" secondAttribute="centerX" constant="164" id="teZ-9r-QWX"/>
-                            <constraint firstAttribute="centerY" secondItem="5SU-ll-afO" secondAttribute="centerY" constant="203" id="vAT-te-twA"/>
                             <constraint firstAttribute="centerX" secondItem="7Zm-dC-SE3" secondAttribute="centerX" constant="-164" id="vSP-QW-vqK"/>
                             <constraint firstAttribute="centerY" secondItem="0co-z2-8yL" secondAttribute="centerY" constant="65" id="vrE-6F-jEl"/>
                             <constraint firstAttribute="centerY" secondItem="nEJ-lt-N8s" secondAttribute="centerY" constant="65" id="vvF-HA-gXe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="rUh-Ut-wzq"/>
-                                <exclude reference="sHO-y8-SsJ"/>
+                                <exclude reference="PBH-bZ-8hf"/>
                                 <exclude reference="VZM-nQ-tWJ"/>
                             </mask>
                         </variation>
@@ -353,7 +335,7 @@
     </scenes>
     <resources>
         <image name="Back arrow v2" width="512" height="512"/>
-        <image name="logo transparent" width="1056" height="1184"/>
+        <image name="HotDogMeals" width="640" height="285"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eem-iB-y1Y"/>
