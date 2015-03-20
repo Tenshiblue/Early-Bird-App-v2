@@ -94,7 +94,8 @@
                                     <constraint firstAttribute="height" constant="30" id="uCg-z5-0EF"/>
                                     <constraint firstAttribute="width" constant="226" id="vpi-Tc-iMf"/>
                                 </constraints>
-                                <state key="normal" title="More Information">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Menu">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -231,7 +232,7 @@
         <!--About Page-->
         <scene sceneID="x8n-JZ-lrp">
             <objects>
-                <viewController title="About Page" id="CHY-DG-e3B" customClass="ViewController" customModule="Early_Bird" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="About Page" id="CHY-DG-e3B" customClass="orderPage" customModule="Early_Bird" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bae-Dy-Unc"/>
                         <viewControllerLayoutGuide type="bottom" id="eKh-z9-pDQ"/>
@@ -291,6 +292,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="_buttonPressed" destination="CHY-DG-e3B" eventType="touchUpInside" id="VsF-BQ-n1L"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Preference Options" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-Nd-pqg">
                                 <rect key="frame" x="206" y="327" width="188" height="55"/>

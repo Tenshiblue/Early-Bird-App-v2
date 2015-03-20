@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F622B841ABA460A00B81EDD /* More Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F622B831ABA460A00B81EDD /* More Information.swift */; };
+		3F6532621ABB9B1D006A40E8 /* Order Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6532611ABB9B1D006A40E8 /* Order Page.swift */; };
 		D90169021AAA20AA00E02A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90169011AAA20AA00E02A01 /* AppDelegate.swift */; };
 		D90169041AAA20AA00E02A01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90169031AAA20AA00E02A01 /* ViewController.swift */; };
 		D90169071AAA20AA00E02A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90169051AAA20AA00E02A01 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3F622B831ABA460A00B81EDD /* More Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "More Information.swift"; sourceTree = "<group>"; };
+		3F6532611ABB9B1D006A40E8 /* Order Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order Page.swift"; sourceTree = "<group>"; };
 		D90168FC1AAA20AA00E02A01 /* Early Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Early Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90169001AAA20AA00E02A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90169011AAA20AA00E02A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				D90169011AAA20AA00E02A01 /* AppDelegate.swift */,
 				D90169031AAA20AA00E02A01 /* ViewController.swift */,
+				3F6532611ABB9B1D006A40E8 /* Order Page.swift */,
 				3F622B831ABA460A00B81EDD /* More Information.swift */,
 				D90169051AAA20AA00E02A01 /* Main.storyboard */,
 				D90169081AAA20AA00E02A01 /* Images.xcassets */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6532621ABB9B1D006A40E8 /* Order Page.swift in Sources */,
 				D90169041AAA20AA00E02A01 /* ViewController.swift in Sources */,
 				D90169021AAA20AA00E02A01 /* AppDelegate.swift in Sources */,
 				3F622B841ABA460A00B81EDD /* More Information.swift in Sources */,
